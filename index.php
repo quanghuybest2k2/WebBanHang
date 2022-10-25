@@ -1,4 +1,6 @@
 <?php
+require "./Core/Database.php";
+require "./Models/BaseModel.php";
 require "./Controllers/BaseController.php";
 
 $ControllerName = ucfirst((strtolower($_REQUEST["controller"]) ?? "Welcome") . "Controller");
